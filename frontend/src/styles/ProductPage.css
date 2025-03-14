@@ -1,0 +1,218 @@
+.product-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.home-btn:hover {
+  background-color: #0056b3;
+}
+
+.product-page h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #e91e63;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px; /* Отступ между кнопками */
+  margin-bottom: 20px;
+}
+
+.favorite-btn,
+.add-to-cart-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.favorite-btn {
+  background-color: #6c757d; /* Серый цвет для кнопки "Избранное" */
+  color: white;
+}
+
+.favorite-btn:hover {
+  background-color: #5a6268; /* Темнее серый при наведении */
+}
+
+.favorite-btn.favorite-btn-active {
+  background-color: #28a745; /* Зеленый цвет для активного состояния */
+}
+
+.favorite-btn.favorite-btn-active:hover {
+  background-color: #218838; /* Темнее зеленый при наведении */
+}
+
+.add-to-cart-btn {
+  background-color: #007bff; /* Синий цвет для кнопки "В корзину" */
+  color: white;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3; /* Темнее синий при наведении */
+}
+
+.add-to-cart-btn.in-cart {
+  background-color: #6c757d; /* Серый цвет для кнопки "В корзине" */
+}
+
+.add-to-cart-btn.in-cart:hover {
+  background-color: #5a6268; /* Темнее серый при наведении */
+}
+
+.toggle-reviews-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.toggle-reviews-btn:hover {
+  background-color: #45a049;
+}
+
+.reviews-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.reviews-section textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.reviews-section button {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.reviews-section button:hover {
+  background-color: #1e88e5;
+}
+
+.reviews-list {
+  margin-top: 20px;
+}
+
+.review {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.review strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.review p {
+  margin: 0;
+  color: #555;
+}
+
+.review small {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+
+/* Стили для звезд рейтинга */
+.rating-stars {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.rating-stars .star {
+  cursor: pointer;
+  font-size: 24px;
+  color: #ccc;
+}
+
+.rating-stars .star.active {
+  color: gold;
+}
+
+.review-rating {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.review-rating .star {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.review-rating .star.active {
+  color: gold;
+}

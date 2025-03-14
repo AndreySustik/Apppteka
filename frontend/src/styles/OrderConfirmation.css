@@ -1,0 +1,54 @@
+.order-confirmation {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-confirmation h1 {
+    color: #28a745;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .order-confirmation p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .order-confirmation a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .order-confirmation a:hover {
+    background: #0056b3;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .order-confirmation {
+      padding: 15px;
+    }
+  
+    .order-confirmation h1 {
+      font-size: 20px;
+    }
+  
+    .order-confirmation p {
+      font-size: 16px;
+    }
+  
+    .order-confirmation a {
+      font-size: 14px;
+    }
+  }

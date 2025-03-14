@@ -1,0 +1,92 @@
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: 200px; /* Фиксированная ширина карточки */
+  flex-shrink: 0; /* Запрещаем карточкам сжиматься */
+  margin: 0 10px; /* Отступ между карточками */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Равномерное распределение контента */
+  height: 300px; /* Уменьшенная высота карточки */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: 120px; /* Уменьшенная высота изображения */
+  object-fit: contain; /* Сохраняем пропорции изображения */
+  border-radius: 8px; /* Скругление углов изображения */
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333; /* Темный цвет текста */
+  flex-grow: 1; /* Текст занимает доступное пространство */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-price {
+  font-size: 14px;
+  color: #28a745; /* Зеленый цвет для цены */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Отступ между кнопками */
+  margin-top: 10px;
+}
+
+.add-to-cart-btn,
+.favorite-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  flex: 1; /* Кнопки занимают одинаковое пространство */
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+  background: #0056b3; /* Темнее синий при наведении */
+}
+
+.add-to-cart-btn.in-cart {
+  background: #6c757d; /* Серый цвет для кнопки "В корзине" */
+}
+
+.add-to-cart-btn.in-cart:hover {
+  background: #5a6268; /* Темнее серый при наведении */
+}
+
+.favorite-btn {
+  background: #6c757d; /* Серый цвет для кнопки "Избранное" */
+}
+
+.favorite-btn:hover {
+  background: #5a6268; /* Темнее серый при наведении */
+}
+
+.favorite-btn.favorite-btn-active {
+  background: #28a745; /* Зеленый цвет для активного состояния */
+}
+
+.favorite-btn.favorite-btn-active:hover {
+  background: #218838; /* Темнее зеленый при наведении */
+}

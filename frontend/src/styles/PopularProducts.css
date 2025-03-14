@@ -1,0 +1,63 @@
+.popular-products {
+  margin-top: 20px;
+  position: relative;
+}
+
+.popular-products h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* Темный цвет текста */
+}
+
+.products-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Скрываем всё, что выходит за пределы контейнера */
+}
+
+.products-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden; /* Убираем стандартный скроллбар */
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  width: 100%; /* Занимает всю ширину контейнера */
+}
+
+.scroll-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.scroll-button.left {
+  left: -20px; /* Сдвигаем стрелку влево */
+}
+
+.scroll-button.right {
+  right: -20px; /* Сдвигаем стрелку вправо */
+}
+
+.scroll-button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Темнее при наведении */
+}
+
+.scroll-button svg {
+  width: 24px;
+  height: 24px;
+  fill: white; /* Цвет SVG-иконок */
+}

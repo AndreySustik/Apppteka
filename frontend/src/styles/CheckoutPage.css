@@ -1,0 +1,73 @@
+.checkout-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .checkout-page label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .checkout-page input,
+  .checkout-page textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .checkout-page textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .checkout-page .submit-order-btn {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .checkout-page .submit-order-btn:hover {
+    background: #218838;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .checkout-page {
+      padding: 15px;
+    }
+  
+    .checkout-page h1 {
+      font-size: 20px;
+    }
+  
+    .checkout-page input,
+    .checkout-page textarea {
+      font-size: 14px;
+    }
+  
+    .checkout-page .submit-order-btn {
+      font-size: 14px;
+    }
+  }
